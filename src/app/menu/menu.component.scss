@@ -1,0 +1,17 @@
+.content {
+    margin: 10px;
+}
+
+ion-label {
+    text-transform: uppercase;
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+    
+    & ion-item {
+        text-transform: uppercase;
+        font-size: small;
+    }
+}

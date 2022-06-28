@@ -1,0 +1,12 @@
+<ion-content>
+    <div class="content">
+        <ion-label>{{ title }}</ion-label>
+        <ion-list>
+            <a [routerLink]="route.path" routerLinkActive="active" *ngFor="let route of routes">
+                <ion-item (click)="closePopover()">
+                    {{ route.path | replace: "-":" " }}
+                </ion-item>
+            </a>
+        </ion-list>
+    </div>
+</ion-content>

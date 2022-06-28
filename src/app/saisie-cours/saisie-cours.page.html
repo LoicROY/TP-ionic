@@ -1,0 +1,49 @@
+<app-header [header]="'Saisie cours'"></app-header>
+
+<ion-content>
+    <form (ngSubmit)="addCours()" novalidate>
+        <!-- Nom du cours -->
+        <ion-item>
+            <ion-label for="nom" position="floating">Nom du cours</ion-label>
+            <ion-input
+                id="nom"
+                name="nom"
+                [(ngModel)]="cours.nom"
+                required
+            ></ion-input>
+        </ion-item>
+
+        <!-- Nombre d'etudiants -->
+        <ion-item>
+            <ion-label for="nbrEtudiant" position="floating">Nombre d'etudiants</ion-label>
+            <ion-input
+                id="nbrEtudiant"
+                name="nbrEtudiant"
+                type="number"
+                [(ngModel)]="cours.nbrEtudiant"
+                [min]="1"
+                required
+            ></ion-input>
+        </ion-item>
+
+        <!-- Nom du prof -->
+        <ion-item>
+            <ion-label for="professeur" position="floating"
+                >Nom du professeur</ion-label
+            >
+            <ion-input
+                id="professeur"
+                name="professeur"
+                [(ngModel)]="cours.professeur"
+                required
+            ></ion-input>
+        </ion-item>
+
+        <!-- Submit -->
+        <ion-button type="submit">Ajouter un cours</ion-button>
+
+        <p *ngIf="erreur" class="error">{{ erreur }}</p>
+    </form>
+</ion-content>
+
+<app-footer></app-footer>

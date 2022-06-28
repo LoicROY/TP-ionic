@@ -1,0 +1,22 @@
+{
+  "Cours": [
+    {
+      "nom": "Maths",
+      "nbrEtudiant": 17,
+      "professeur": "Dupond",
+      "id": 1
+    },
+    {
+      "nom": "Français",
+      "nbrEtudiant": 20,
+      "professeur": "Lorem",
+      "id": 2
+    },
+    {
+      "nom": "Anglais",
+      "nbrEtudiant": 2,
+      "professeur": "Ipsum",
+      "id": 3
+    }
+  ]
+}
